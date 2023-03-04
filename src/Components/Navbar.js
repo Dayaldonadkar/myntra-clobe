@@ -4,6 +4,7 @@ import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import SavedSearchIcon from "@mui/icons-material/SavedSearch";
+import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
   render() {
@@ -40,8 +41,11 @@ export default class Navbar extends Component {
 
         <div className="flex items-center justify-center gap-7">
           <div className="flex flex-col items-center">
-            <PersonOutlineIcon />
-            <h1>Profile</h1>
+            <Link to="login">
+              <PersonOutlineIcon />
+
+              <h1>Login</h1>
+            </Link>
           </div>
           <div className="flex flex-col items-center">
             <FavoriteBorderIcon />

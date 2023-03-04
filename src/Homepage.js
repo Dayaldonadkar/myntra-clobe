@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Banner from "./Components/Banner";
 import BiggestDeals from "./Components/BiggestDeals";
 import Explore from "./Components/Explore";
+import Footer from "./Components/Footer";
 import Luxe from "./Components/Luxe";
 import ToBag from "./Components/ToBag";
 import Trending from "./Components/Trending";
@@ -16,6 +17,7 @@ export default class Homepage extends Component {
         <Explore />
         <Luxe />
         <Trending />
+        <Footer />
       </div>
     );
   }
